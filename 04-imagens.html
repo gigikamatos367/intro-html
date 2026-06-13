@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre imagens</title>
+</head>
+
+<body>
+
+    <h1>Conhecendo o elemento de imagem</h1>
+    <hr>
+
+    <h2>Sobre o elemento de img</h2>
+
+    <p>A forma mais comum de inserir imagens no
+        HTML é usando a tag <code>img</code>
+    </p>
+
+    <h3>Exemplo prático</h3>
+    <p>Trabalhando com links externos</p>
+    <!-- Links externos = links ou url de sites -->
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="" height="250" width="400">
+
+    <!-- O atributo src contém uma URL que aponta 
+ para a imagem que você deseja incorporar
+ na página -->
+
+    <hr>
+
+    <h4>Trabalhando com imagens locais</h4>
+
+    <img src="assets/foto de bolo de chocolate.jpg" alt="bolo de chocolate com calda de chocolate">
+
+    <p>ALT (alternative/alternativo) - É o elemento que será apresentado caso a imagem não carregue.</p>
+    <p>O atributo alt é <strong>MUITO IMPORTANTE</strong></p>
+
+    <ul>
+        <li>Acesseibilidade</li>
+        <li>Leitores de tela</li>
+        <li>SEO</li>
+        <li>Fallback</li>
+    </ul>
+
+    <hr>
+    <h4>Ajustando o tamanho das imagens</h4>
+    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Notebook sob a mesa com pessoa digitando" height="250" width="400">
+
+
+    <p>HEIGHT - O atributo height serve para ajustar o tamnho da
+        altura da imagem.</p>
+
+    <p>WIDTH - O atributo width serve para
+        ajustar o tamanho da largura da imagem.</p>
+
+    <!-- Os pixels (px) são uma unidade de medida
+    usada para definir TAMANHOS e espaçamentos 
+    na interface. -->
+
+    <hr>
+
+    <h2>Trabalhando com imagens responsivas</h2>
+
+    <p>O <code>picture</code> é um elemento do HTML
+        usado para imagens <em>responsivas e adptativas.</em> </p>
+
+    <p>Essa tag, permite o seguinte:</p>
+    <ul>
+        <li>Tricar a imagem conforme o <em>tamanho da tela</em></li>
+        <li>Carregar imagns diferentes para mobile,
+            tablet e desktop.</li>
+    </ul>
+
+<picture>
+        <source srcset="assets/montanha-com-nuvem-mobile.jpg"  media="(max-width: 600px)" type="image/jpg">
+
+        <source srcset="assets/montanha-com-nuvem-tablet.jpg" media="(mas-width: 1024px)" type="image/jpg"> 
+
+        <!-- Img como fallback - o fallback é basicamente um plano B, ou seja, algo
+         que entra em ação quando a opção principal não funciona -->
+        <img src="assets/montanha-com-nuvem-desktop.jpg" alt="Montanha com nuvem" height="250" width="400">
+    </picture>
+
+    <p>srcset - serve para oferecer multiplas versões de
+        uma mídia e deixar o navegador escolher a mais
+        adequada conforme tamanho da tela, formato
+        suportado, largura disponível, performance.</p>
+
+</body>
+
+</html>

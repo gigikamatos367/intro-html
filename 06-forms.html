@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formulários</title>
+</head>
+
+<body>
+<h1>Conhecendo o formulário</h1>
+<hr>
+<h2>form</h2>
+<p>No HTML, a tag <code> &lt;form&gt; </code> serve para coletar
+dados do usuário e enviá-los para aqlgum destino,
+normalmente um servidor ou uma aplicação web</p>
+
+<!-- O atributo action - define para onde os daods coletados serão
+ enviados -->
+
+<form action="">
+     <!-- O elemento input - É utilizado para criar uma caixa onde
+     o usuário poderá inserir a informação solicitada.
+     Atributo type - É utilizado para definir o tipo de campo ou
+     comportamento do input -->
+
+     <!-- Placeholder - Serve como texto temporário de exemplo
+      para que o usuário saiba preencher ou interagir
+      com aquele campo -->
+
+    <input type="text" placeholder="Ex: Gioh Nascimento">
+    <br>
+
+     <!-- Label/etiqueta - esse elemento é responsável por identificar o 
+     campo de um fomulário. Esse recurso diferente do palceholder, 
+     é totalmente acessível -->
+
+     <!-- for - Serve para associar um rótulo/label a um elemento do
+      formulário. -->
+
+     <!-- id - serve para identificar de forma única um elemento -->
+
+    <label for="senha">Senha</label>
+    <input type="password" placeholder="Digite sua senha aqui" id="password">
+    
+    <br>
+    <label for="Confirmar-password">Confirmar senha</label>
+    <input type="password" placeholder="Confirme sua senha" id="confirmar-password"> 
+
+    <button type="submit">Enviar</button>
+</form>
+
+<hr>
+
+<h2>Faça Login</h2>
+<form>
+    <label for="email">Email:</label> <br>
+    <input type="email" placeholder="seu@email.com" id="email"><br>
+
+    <label for="login-password">Senha:</label> <br>
+    <input type="password" placeholder="*************" id="login-password"> 
+
+    <button type="submit">Enviar</button>
+</form> 
+
+<hr>
+
+<h2>Cadastrar-se</h2>
+<form>
+    <label for="name">Nome</label> <br>
+    <input type="" placeholder="Ex: Gioh Nascimento" id="name" required> <br> 
+
+    <label for="email">Email</label> <br>
+    <input type="email" id="email" placeholder="seu@email.com" required> <br>
+
+    <label for="password">Senha (mínimo 6 caracteres)</label> <br>
+    <input type="password" id="password" placeholder="*******" required minlength="6"> <br>
+
+<!-- Required - É algo obrigatório -->
+
+ <label for="aceitar-termos">Li e aceito os termos</label>
+    <input type="checkbox" name="" id="aceitar-termos"> <br>
+
+    <!-- checkbox - caixinha de marcação -->
+
+    <button type="submit">Cadastrar</button>
+
+</form>
+
+<hr>
+
+<h2>Testando outros recursos do fomulário</h2>
+<form>
+    <input type="radio" id="html" value="HTML" name="linguagem">
+    <label for="html">HTML</label><br>
+
+    <input type="radio" id="css" value="CSS" name="linguagem">
+    <label for="css">CSS</label><br>
+
+    <input type="radio" id="js" value="JavaScript" name="linguagem">
+    <label for="js">JavaScript</label><br>
+
+    <label for="">Deixe sua mensagem</label><br>
+    <textarea name="mensagem" id="mensagem" placeholder="Olá,
+    deixe sua mensagem" rows="5" cols="40"></textarea><br>
+    
+       <button type="subimt">Enviar dados</button>
+    </form>
+</body>
+
+</html>

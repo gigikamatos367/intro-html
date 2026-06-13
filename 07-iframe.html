@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Iframe</title>
+</head>
+
+<body>
+    <h1>Conhecendo o elemento iframe</h1>
+    <p>O elemento <code>&lt;iframe&gt;</code> permite incorporar
+        outra página <strong>HTML</strong> dentro da página atual.</p>
+
+    <!-- I = INLINE | frame = embutido -->
+
+    <hr>
+
+    <h2>Criando iframe do YouTube</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ghTrp1x_1As?si=FbC3GV5dXPCECGjD"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <hr>
+
+    <h2>Adicionando frame de mapa</h2>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14654.466347995158!2d-46.736719608306856!3d-23.32966600771702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee43fac3cf549%3A0xdd8b9d0757e7b288!2sFranco%20da%20Rocha!5e0!3m2!1spt-BR!2sbr!4v1780966736336!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <hr>
+    <h2>Exemplo com página interna</h2>
+    <iframe src="04-imagens.html" frameborder="0" width="600" height="450"></iframe>
+
+    <hr>
+    <h2>Galeria de imagens com iframe</h2>
+
+    <!-- Palavrinha do dia - IDENTAÇÃO: Serve para a estruturação do nosso código, ou seja, 
+     mante-lo mais organiza-lo. -->
+
+   <iframe src="" width="600" height="450" name="meuFrame"></iframe>
+
+     <a href="assets/montanha-com-nuvem-desktop.jpg" target="meuFrame">Imagem 1</a>
+     <a href="assets/incrivel-mundo-de-gumball.webp" target="meuFrame">Imagem 2</a>
+     <a href="assets/foto-miranha.webp" target="meuFrame">Imagem 3</a>
+</body>
+
+</html>
